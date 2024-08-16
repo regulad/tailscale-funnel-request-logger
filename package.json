@@ -1,0 +1,23 @@
+{
+  "name": "tailscale-funnel-request-logger",
+  "version": "1.0.0",
+  "description": "logs all incoming traffic to a tailscale funnel",
+  "main": "index.js",
+  "scripts": {
+    "run": "$(node tailscale.js) funnel 3000 & PORT=3000 HOSTNAME=0.0.0.0 node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/regulad/tailscale-funnel-request-logger.git"
+  },
+  "author": "Parker Wahle <regulad@regulad.xyz>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/regulad/tailscale-funnel-request-logger/issues"
+  },
+  "homepage": "https://github.com/regulad/tailscale-funnel-request-logger#readme",
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "express": "^4.19.2"
+  }
+}
